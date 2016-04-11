@@ -90,8 +90,18 @@ Valid JSON cannot contain comments, so remember to remove them first!
     "ircStatusNotices": {
       "join": false, // Don't send messages about joins
       "leave": true
-    }
+    },
+    // maps IRC handles via regex to gravatar e-mail
+    "gravatars": "path/to/config.json"
   }
+]
+```
+
+The `gravatars` config file looks like:
+```js
+[
+  ["sarah(_zzz)?", "sarah@example.com"],
+  ["jims_handle|jims_secondary", "jim@example.com"]
 ]
 ```
 
